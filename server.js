@@ -22,7 +22,7 @@ app.post('/', (req, res) => {
         from:req.body.email,
         to:'jabez@creatorslab.in',
         subject:`Message from ${req.body.email}:${req.body.name}`,
-        html:`<p>Name:${req.body.name}</p><p>Phone:${req.body.phone}</p><p>Department:${req.body.department}</p><p>Collegename:${req.body.collegename}</p><p>Currentyear:${req.body.currentyear}</p><p>Message:${req.body.message}</p>`,
+        html:`<p>Name:${req.body.name}</p><p>Phone:${req.body.phone}</p><p>Collegename:${req.body.collegename}</p><p>Projectrunningstatus:${req.body.Projectrunningstatus}</p><p>finalyear${req.body.finalyear}</p><p>department${req.body.department}</p><p>time${req.body.phone}</p><p>Message:${req.body.message}</p>`,
     }
     transporter.sendMail(mailOptions,(error,info)=>{
         if(error){
